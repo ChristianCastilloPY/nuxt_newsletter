@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+  // env:{
+  //   apiURL:process.env.API_URL || 'http://localhost:3000',
+  // },
   /*
    ** Headers of the page
    */
@@ -39,10 +42,24 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    // '@nuxtjs/font-awesome',
+    // 'nuxt-fontawesome',
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faDollarSign','faSearch','faUser','faEnvelope']
+
+        }
+      ]
+    }],
+    //OR like this
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-sweetalert2',
   ],
   /*
    ** Axios module configuration
@@ -56,6 +73,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }

@@ -249,7 +249,6 @@ export default {
     getCards() {
       const URL_N = `https://newsletters.academlo.com/api/v1/newsletters`
       // const URL_N = VUE_APP_API + '/newsletters';
-
       axios.get(URL_N).then((response) => {
         this.cards = response.data
         console.log(this.cards)
