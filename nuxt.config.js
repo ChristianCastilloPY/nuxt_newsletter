@@ -1,4 +1,7 @@
 export default {
+  generate: {
+    fallback: true
+  } ,
   mode: 'universal',
   // env:{
   //   apiURL:process.env.API_URL || 'http://localhost:3000',
