@@ -28,7 +28,7 @@
         Submit
       </b-button>
     </b-form>
-    <div v-if="valor">
+    <div v-if="!valor">
       Esto es verdadero
     </div>
   </div>
@@ -54,7 +54,7 @@ export default {
       axios.post(endPoint, this.form).then((response) => {
         const user = response.data
         this.login(user)
-        this.$router.push('/all')
+        this.$router.push('/panel/dashboard')
       })
 
       alert('La sesión se inició correctamente')

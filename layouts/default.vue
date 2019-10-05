@@ -1,22 +1,21 @@
 <template>
   <div>
-    <navigation />
+    <!-- <navigation /> -->
     <nuxt />
-    <pie />
+    <!-- <pie /> -->
   </div>
 </template>
 <script>
-import Navigation from '@/components/Navigation'
-import Pie from '@/components/Pie'
+// import Navigation from '@/components/Navigation'
+// import Pie from '@/components/Pie'
 
 export default {
-  components: {
-    Navigation,
-    Pie
-  }
+  // components: {
+  //   Navigation,
+  //   Pie
+  // }
 }
 </script>
-
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

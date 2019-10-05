@@ -16,6 +16,7 @@
       </div>
       <br />
       <br />
+
       <div class="btn-group btn-group-toggle mt-4">
         <a href="all" to="/all">
           <button
@@ -27,6 +28,7 @@
           </button>
         </a>
       </div>
+
       <div class="btn-group btn-group-toggle list-inline mt-4">
         <div
           v-for="(button, index) in buttons"
@@ -49,6 +51,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import axios from 'axios'
 export default {
